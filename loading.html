@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入组件库 -->
+    
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        @keyframes loading{
+            0%{
+                transform: scale(1) rotate(0);
+            }
+            50%{
+                transform: scale(1.2) rotate(180deg);
+            }
+            100%{
+                transform: scale(1) rotate(360deg);
+            }
+        }
+        .loading_box{
+            width: 80px;
+            padding: 20px;
+            text-align: center;
+        }
+        .loading_icon{
+            animation: loading 1.6s linear infinite;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="loading_box">
+            <img src="./img/loading.png" alt="" class="loading_icon">
+            <p>加载中...</p>
+        </div>
+    </div>
+</body>
+</html>
